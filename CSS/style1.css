@@ -1,0 +1,72 @@
+body{
+        background: url('../IMG/FONTEXT.jpg') no-repeat center center fixed;
+        background-size: cover;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #271c0ea4;
+    color: #fff8e3;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid beige;
+    border-left: 2px solid beige;
+    border-right: 2px solid beige;
+    box-shadow: 0px 5px 10px rgb(255, 252, 158);
+}
+h1{
+        text-decoration: underline;
+}
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para los recuadros de imágenes */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-box {
+    width: 30%;
+     /* Ancho de cada caja de imagen */
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(0, 1, 1, 0.298); /* Fondo semitransparente */
+    border: 2px solid #fffbdc;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.image-box:hover{
+    transform: scale(1.05);
+}
+.image-box a {
+    display: block;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+
+p{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+.cap-img{
+    width: 30%;
+}
