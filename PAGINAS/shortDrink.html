@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces de Bootstrap css y java script  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Enlaces de Bootstrap java script carrito, seleccionador, boton-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Enlaces de Bootstrap CSS carrito-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Enlaces hacia las carpetas de css y java script--> 
+<link rel="stylesheet" href="../CSS/style2.css">
+<link rel="stylesheet" href="../CSS/style3.css">
+    <title>Taberna COCTEL BOOM</title>
+</head>
+<body>
+
+                <style>
+                    .popup {
+                           z-index: 9999;
+                           display: none;
+                           position: fixed;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+                         }
+                         
+                         .popup-contenido {
+                           position: absolute;
+                           top: 50%;
+                           left: 50%;
+                           transform: translate(-50%, -50%);
+                           background-color: #688bff; /* Color de fondo de la ventana emergente */
+                           padding: 20px;
+                           text-align: center;
+                         }
+                         
+                         #cerrarPopup {
+                           background-color: #0e022f; /* Color del botón de cierre */
+                           color: #fff;
+                           border: none;
+                           padding: 10px 20px;
+                           cursor: pointer;
+                           margin-top: 10px;
+                         }
+               </style>
+               <div class="cont-1">
+                <header>
+                    <h1>Taberna "COCTEL BOOM"</h1>
+                    <h1>Short Drinks (Bebidas Cortas)</h1>
+                </header>
+                    <nav class="navbar-1">
+                        <a href="../PAGINAS/menu.html"><<- Regresar Atrás</a>
+                    </nav>
+                </div>
+                      
+                   <main class="container">
+                           <section class="bum">
+                           <div class="row">
+                               <div class="col-md-6">
+                                   <div class="menu-item">
+                                    <h1>ARCO IRIS</h1>
+                                    <ul>
+                                    <li>    
+                                    <img src="../IMG/short/arcoiris.jpg" alt="Cóctel 1" class="arco">
+                                 </li>
+                                    <li class="fa">
+                                     <h2>Ingredientes</h2> 
+                                     <p> > hielo  </p>
+                                     <p> > Granadina</p>
+                                     <p> > Jugo de naranja  </p>
+                                     <p> > vodka</p>
+                                     <p> > Blue curacao</p>
+                                </li>
+                                </ul>
+                                   <p class="pre">Precio: 60 Bs</p>
+                                   <h6>SELECCIONE LA CANTIDAD:</h6>
+                                   <div class="input-group">
+                                       <input type="number" class="form-control cantidadInput" placeholder="Cantidad" min="1" max="100">
+                                       <div class="input-group-append">
+                                           <button class="btn btn-primary agregar-al-carrito">Pedir</button>
+                                       </div>
+                                   </div>
+                               </div>
+               
+                   <div class="menu-item">
+                    <h1>BOLIVIANITA</h1>
+                    <ul>
+                        <li>
+                 <img src="../IMG/short/boliviana.jpg" alt="Cóctel 4">
+                </li>
+                 <li class="fa">
+                    <h2>Ingredientes</h2>
+                    <p> > Vodka 1 oz</p>
+                    <p> > Granadina 1 dash </p>
+                    <p> > Licor de durazno 1/3 oz </p>
+                    <p> > Licor de menta 1/2 oz </p>
+                    <p> > Almibar 1/4 oz</p>
+                </li>                  
+                </ul> 
+                               <p class="pre">Precio: 30 Bs</p>
+                               <h6>SELECCIONE LA CANTIDAD:</h6>
+                               <div class="input-group">
+                                   <input type="number" class="form-control cantidadInput" placeholder="Cantidad" min="1" max="100">
+                                   <div class="input-group-append">
+                                       <button class="btn btn-primary agregar-al-carrito">Pedir</button>
+                                   </div>
+                               </div>
+                           </div>
+               
+                           <div class="menu-item">
+                            <h1>HEMORRAGIA CEREBRAL</h1>
+                            <ul>
+                                <li>
+                            <img src="../IMG/short/cerebro.jpg" alt="Cóctel 4">
+                            </li>
+                            <li class="fa">
+                            <h2>Ingredientes</h2>
+                            <p> > Licor durazno 2/3 oz </p>
+                            <p> > Baileys  1/3 oz </p>
+                            <p> > Granadina 1-2 dash </p>
+                        </li>
+                        </ul>  
+                               <p class="pre">Precio: 42 Bs</p>
+                               <h6>SELECCIONE LA CANTIDAD:</h6>
+                               <div class="input-group">
+                                   <input type="number" class="form-control cantidadInput" placeholder="Cantidad" min="1" max="100">
+                                   <div class="input-group-append">
+                                       <button class="btn btn-primary agregar-al-carrito">Pedir</button>
+                                   </div>
+                               </div>
+                           </div>
+               
+                           <div class="menu-item">
+                            <h1>b-52</h1>
+                            <ul>
+                                <li>
+                            <img src="../IMG/short/coctel-b-52.jpg" alt="Cóctel 4">
+                            </li>
+                            <li class="fa">
+                            <h2>Ingredientes</h2>
+                            <p> > Triplec sec </p>
+                            <p> > Baileys </p>
+                            <p> > Licor de cafe </p>
+                        </li> 
+                        </ul>
+                               <p class="pre">Precio: 40 Bs</p>
+                               <h6>SELECCIONE LA CANTIDAD:</h6>
+                               <div class="input-group">
+                                   <input type="number" class="form-control cantidadInput" placeholder="Cantidad" min="1" max="100">
+                                   <div class="input-group-append">
+                                       <button class="btn btn-primary agregar-al-carrito">Pedir</button>
+                                   </div>
+                               </div>
+                           </div>
+               
+                           <div class="menu-item">
+                            <h1>CUCARACHA</h1>
+                            <div class="di">
+                                <ul>
+                                    <li>
+                                <img src="../IMG/short/cucaracha.jpg"  alt=" ">
+                            </li>
+                                <li class="fa">
+                            <h2>Ingredientes</h2>
+                            <p> > Licor de cafe 50% </p>
+                            <p> > Tequila dorada 50% </p>
+                        </li>
+                    </ul>
+                               <p class="pre">Precio: 30 Bs</p>
+                               <h6>SELECCIONE LA CANTIDAD:</h6>
+                               <div class="input-group">
+                                   <input type="number" class="form-control cantidadInput" placeholder="Cantidad" min="1" max="100">
+                                   <div class="input-group-append">
+                                       <button class="btn btn-primary agregar-al-carrito">Pedir</button>
+                                   </div>
+                               </div>
+                           </div>
+                    </div>
+                   </div>
+                    <div class="col-md-6">
+                       <div class="cuadrado">
+                           <div class="carrito">
+                               <h2 class="header-car">Tu Pedido</h2>
+                               <ul class="list-group carrito-items" id="casilla">
+                                   <!-- Los elementos seleccionados se mostrarán aquí -->
+                               </ul>
+                               <p id="casilla-tot">Total: <span class="carrito-precio-total">Bs 0.00</span></p>
+                               <button class="btn btn-primary pagar">Enviar Pedido</button>
+                           </div>
+                       </div>
+                   </div>
+               
+               </section>
+               
+               
+                   <div id="popup" class="popup">
+                       <div class="popup-contenido">
+                         <p>Tu pedido ha sido realizado con éxito. <br> ¡Gracias por tu compra!</p>
+                         <button id="cerrarPopup">Aceptar</button>
+                       </div>
+                     </div>
+               </main>
+               
+                   
+               <div class="container testimonial-section">
+                   <div class="testimonial-box p-4">
+                       <h3 class="mt-2">Opiniones de Clientes</h3>
+                       <p>Deja tu opinión sobre nuestra taberna:</p>
+                       <form id="testimonial-form">
+                           <div class="form-group">
+                               <label for="nombre">Nombre:</label>
+                               <input type="text" id="nombre" name="nombre" class="form-control">
+                           </div>
+                           <div class="form-group">
+                               <label for="opinion">Opinión:</label>
+                               <textarea id="opinion" name="opinion" class="form-control"></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Enviar Opinión</button>
+                       </form>
+                       <div class="testimonials mt-4">
+                           <!-- Aquí se mostrarán las opiniones de los clientes -->
+                       </div>
+                   </div>
+               </div>
+               
+               
+                   <script>
+                       $(document).ready(function () {
+                        const carrito = [];
+                        let precioTotal = 0;
+                        let popup = document.getElementById('popup');
+                        const cerrarPopupBtn = document.getElementById('cerrarPopup');
+                        const carritoPrecioTotal = document.querySelector('.carrito-precio-total'); // Elemento que muestra el total
+                    
+                        $('.agregar-al-carrito').on('click', function () {
+                        const item = $(this).closest('.menu-item');
+                        const titulo = item.find('h1').text();
+                        const precioText = item.find('p').text();
+                        const precioMatch = precioText.match(/([\d.]+) Bs/);
+                        
+                        if (precioMatch) {
+                            const precio = parseFloat(precioMatch[1]);
+                            const cantidad = parseInt(item.find('.cantidadInput').val());
+                            // Agregar el elemento al carrito
+                            carrito.push({ titulo, precio, cantidad });
+                            // Actualizar el precio total
+                            precioTotal += precio * cantidad;
+                            // Mostrar el carrito actualizado
+                            actualizarCarrito();
+                            // Limpiar el valor de cantidad
+                            item.find('.cantidadInput').val(1);
+                        }
+                    });
+                    
+                    $('.pagar').on('click', function () {
+                        // Mostrar el cuadro de diálogo de confirmación con el total a pagar
+                        const confirmacion = confirm(`¿Estás listo para confirmar tu pedido?\n  \nTOTAL A PAGAR: Bs ${precioTotal.toFixed(2)}`);
+                    
+                        if (confirmacion) {
+                            // Muestra la ventana emergente personalizada vacía
+                            popup.style.display = 'block';
+                        } else {
+                            // Si el usuario cancela, reiniciar el carrito y el precio total
+                            carrito.length = 0;
+                            precioTotal = 0;
+                            actualizarCarrito();
+                        }
+                    });
+                        // Ocultar la ventana emergente al hacer clic en el botón de cierre
+                        cerrarPopupBtn.addEventListener('click', () => {
+                            popup.style.display = 'none';
+                    
+                            window.location.href = '../index.html';
+                    
+                            carrito.length = 0;
+                            precioTotal = 0;
+                            actualizarCarrito();
+                        });
+                    //funcion del carrito para mostrar
+                        function actualizarCarrito() {
+                        const carritoItems = $('.carrito-items');
+                        carritoItems.empty();
+                    
+                        carrito.forEach(item => {
+                            carritoItems.append(`<li class="list-group-item">${item.titulo} ~cantidad [${item.cantidad}] </li>`);
+                        });
+                    
+                        carritoPrecioTotal.textContent = ` Bs ${precioTotal.toFixed(2)}`;
+                    }
+                    });
+                    
+                        </script>
+                   
+                   <!-- JavaScript para los comentarios de los clientes -->
+                   <script>
+                       const testimonialForm = document.getElementById("testimonial-form");
+                       const testimonials = document.querySelector(".testimonials");
+                   
+                       testimonialForm.addEventListener("submit", function (event) {
+                           event.preventDefault();
+                   
+                           const nombre = document.getElementById("nombre").value;
+                           const opinion = document.getElementById("opinion").value;
+                   
+                           const testimonialItem = document.createElement("div");
+                           testimonialItem.classList.add("testimonial-item");
+                           testimonialItem.innerHTML = `<p><strong>${nombre}:</strong> ${opinion}</p>`;
+                           testimonials.appendChild(testimonialItem);
+                           // Limpia el formulario
+                           testimonialForm.reset();
+                   
+                           // Guarda la opinión en localStorage
+                           const savedTestimonials = JSON.parse(localStorage.getItem("testimonials")) || [];
+                           savedTestimonials.push({ nombre, opinion });
+                           localStorage.setItem("testimonials", JSON.stringify(savedTestimonials));
+                       });
+                   
+                       // Cargar opiniones almacenadas en localStorage al cargar la página
+                       window.addEventListener("load", function () {
+                           const savedTestimonials = JSON.parse(localStorage.getItem("testimonials")) || [];
+                   
+                           savedTestimonials.forEach(function (testimonial) {
+                               const testimonialItem = document.createElement("div");
+                               testimonialItem.classList.add("testimonial-item");
+                               testimonialItem.innerHTML = `<p><strong>${testimonial.nombre}:</strong> ${testimonial.opinion}</p>`;
+                               testimonials.appendChild(testimonialItem);
+                           });
+                       });
+                   </script>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Contacto</h4>
+                <p>Dirección: Calle 15, La Paz</p>
+                <p>Teléfono: +591 788 957 01</p>
+                <p>Email: CoctelBoom@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Síguenos</h4>
+                <a href="#" target="_blank" class="text-white">Facebook</a> |
+                <a href="#" target="_blank" class="text-white">Instagram</a>
+            <img class="cap-img" src="../IMG/Captura55555.JPG" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+</body>
+</html>
